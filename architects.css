@@ -25,6 +25,10 @@
   background-color: rgba(255, 144, 14, 0.1);
 }
 
+.text-primary{
+  color: #FF900E;
+}
+
 .primary-btn{
   background-color: rgba(255, 144, 14, 1);
   color:white;
@@ -115,8 +119,27 @@ main > section{
 /* responsive */
 @media screen and (max-width: 576px) {
   .navbar, 
-  .nav-links{
+  .nav-links,
+  .teams{
     flex-direction: column;
   }
-  
+
+  .team-img{
+    grid-template-columns: repeat(1,1fr);
+  }
+  .our-features{
+    margin-left: 20px;
+  }
 }
+
+/* medium devices */
+ @media screen and (min-width: 576px) and (max-width:992px) {
+
+    .teams{
+      flex-direction: column;
+    }
+    .our-features{
+      margin: 50px auto;
+    }
+  
+ }
